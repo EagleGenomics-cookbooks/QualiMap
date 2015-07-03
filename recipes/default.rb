@@ -3,3 +3,35 @@
 # Recipe:: default
 #
 # Copyright (c) 2015 The Authors, All Rights Reserved.
+##########################################################
+
+include_recipe 'build-essential'
+include_recipe 'java'
+
+##########################################################
+# here for use by serverspec
+
+
+##########################################################
+
+package ['unzip'] do
+  action :install
+end
+
+##########################################################
+
+remote_file "#{Chef::Config[:file_cache_path]}/#{node['QualiMap']['filename']}" do
+  source node['QualiMap']['url']
+  action :create_if_missing
+end
+
+execute "unzip #{Chef::Config[:file_cache_path]}/#{node['QualiMap']['filename']} -d #{node['QualiMap']['install_dir']}" do
+  not_if { ::File.exist?("#{node['QualiMap']['dir']}/qualimap") }
+end
+
+link "#{node['QualiMap']['bin_path']}/qualimap" do
+  to "#{node['QualiMap']['dir']}/qualimap"
+end
+
+
+##########################################################

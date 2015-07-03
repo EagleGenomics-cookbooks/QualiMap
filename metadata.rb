@@ -6,4 +6,6 @@ description 'Installs/Configures QualiMap'
 long_description 'Installs/Configures QualiMap'
 version '0.1.0'
 
+depends 'build-essential'
 depends 'magic_shell'
+depends 'java'
