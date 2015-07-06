@@ -11,6 +11,13 @@ include_recipe 'java'
 ##########################################################
 # here for use by serverspec
 
+magic_shell_environment 'QUALIMAP_VERSION' do
+  value node['QualiMap']['version']
+end
+
+magic_shell_environment 'QUALIMAP_DIR' do
+  value node['QualiMap']['dir']
+end
 
 ##########################################################
 
@@ -32,6 +39,5 @@ end
 link "#{node['QualiMap']['bin_path']}/qualimap" do
   to "#{node['QualiMap']['dir']}/qualimap"
 end
-
 
 ##########################################################

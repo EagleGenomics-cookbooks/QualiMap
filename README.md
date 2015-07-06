@@ -18,12 +18,14 @@ Requirements
 
 Notes
 =====
-The file is unzip in /usr/local/QualiMap so need to run from here. 
+The file is unzipped in /usr/local/qualimap_[VERSION] which contains the qulimap executable.
+A symbolic is created in /usr/local/bin to this file, which you can access as long as /usr/local/bin
+is in your PATH. 
 
 Usage
 =====
 
-    
+
 License and Authors
 ===================
 
@@ -47,5 +49,4 @@ ToDo
 ====
 
 Package install for Ubuntu.
-Set paths/environment.
-Tests.
+
