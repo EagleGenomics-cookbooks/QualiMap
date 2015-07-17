@@ -1,10 +1,12 @@
 # QualiMap
-Chef recipe for QualiMap - Qualimap 2 is a platform-independent application written in Java and R that provides both a 
-Graphical User Inteface (GUI) and a command-line interface to facilitate the quality control of 
-alignment sequencing data and its derivatives like feature counts.
 
 Description
 ===========
+This cookbook install QualiMap
+
+Qualimap 2 is a platform-independent application written in Java and R that provides both a 
+Graphical User Inteface (GUI) and a command-line interface to facilitate the quality control of 
+alignment sequencing data and its derivatives like feature counts.
 
 http://qualimap.bioinfo.cipf.es/
 
@@ -24,13 +26,27 @@ is in your PATH.
 
 Usage
 =====
+Simply include the recipe wherever you would like it installed, such as a run list (recipe[QualiMap]) or a cookbook (include_recipe 'QualiMap')
 
+
+## Testing
+To test the recipe we use chef test kitchen:
+
+kitchen converge default-centos65 
+
+kitchen login default-centos65
+
+kitchen verify default-centos65
+
+kitchen destroy default-centos65
 
 License and Authors
 ===================
 
 * Authors:: Bart Ailey (<chef@eaglegenomics.com>)
-    
+* Authors:: Dan Barrel (<chef@eaglegenomics.com>)
+* Authors:: Nick James (<chef@eaglegenomics.com>)
+
 Copyright:: 2015, Eagle Genomics Ltd
     
 Licensed under the Apache License, Version 2.0 (the "License");

@@ -16,9 +16,9 @@ describe command('which qualimap') do
 end
 
 # The version in the help text is different, v.2.1.1 rahter than v2.1.1 as it is elsswhere
-versionHelp = ENV['QUALIMAP_VERSION'].gsub(/v/, 'v.')
+version_help = ENV['QUALIMAP_VERSION'].gsub(/v/, 'v.')
 
 describe command('qualimap -version') do
   its(:exit_status) { should eq 0 }
-  its(:stdout) { should contain(versionHelp) }
+  its(:stdout) { should contain(version_help) }
 end
