@@ -2,9 +2,7 @@
 
 Description
 ===========
-This cookbook install QualiMap
-
-Qualimap 2 is a platform-independent application written in Java and R that provides both a 
+This cookbook installs QualiMap 2, a platform-independent application written in Java and R that provides both a 
 Graphical User Inteface (GUI) and a command-line interface to facilitate the quality control of 
 alignment sequencing data and its derivatives like feature counts.
 
@@ -20,7 +18,7 @@ Requirements
 
 Notes
 =====
-The file is unzipped in /usr/local/qualimap_[VERSION] which contains the qulimap executable.
+The file is unzipped in /usr/local/qualimap_[VERSION] which contains the Qualimap executable.
 A symbolic is created in /usr/local/bin to this file, which you can access as long as /usr/local/bin
 is in your PATH. 
 
