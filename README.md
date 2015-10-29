@@ -13,12 +13,12 @@ Requirements
 
 ## Platform:
 
-* Centos 6.5
-* RHEL 6.5
+* Centos 6.6
+* RHEL 6.6
 
 Notes
 =====
-The file is unzipped in /usr/local/qualimap_[VERSION] which contains the Qualimap executable.
+The file is unzipped in /usr/local/qualimap_[VERSION] which contains the QualiMap executable.
 A symbolic is created in /usr/local/bin to this file, which you can access as long as /usr/local/bin
 is in your PATH. 
 
