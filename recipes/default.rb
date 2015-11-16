@@ -5,6 +5,12 @@
 # Copyright (c) 2015 The Authors, All Rights Reserved.
 ##########################################################
 
+package ['unzip', 'tar'] do
+  action :install
+end
+
+##########################################################
+
 include_recipe 'build-essential'
 include_recipe 'java'
 
@@ -17,12 +23,6 @@ end
 
 magic_shell_environment 'QUALIMAP_DIR' do
   value node['QualiMap']['dir']
-end
-
-##########################################################
-
-package ['unzip'] do
-  action :install
 end
 
 ##########################################################
