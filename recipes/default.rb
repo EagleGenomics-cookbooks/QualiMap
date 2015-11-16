@@ -5,7 +5,7 @@
 # Copyright (c) 2015 The Authors, All Rights Reserved.
 ##########################################################
 
-package ['unzip', 'tar'] do
+package %w(unzip tar) do
   action :install
 end
 
