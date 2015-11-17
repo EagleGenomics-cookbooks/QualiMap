@@ -19,7 +19,7 @@ Requirements
 Notes
 =====
 The file is unzipped in /usr/local/qualimap_[VERSION] which contains the QualiMap executable.
-A symbolic is created in /usr/local/bin to this file, which you can access as long as /usr/local/bin
+A symbolic link is created in /usr/local/bin to this file, which you can access as long as /usr/local/bin
 is in your PATH. 
 
 Usage
