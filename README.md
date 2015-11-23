@@ -14,7 +14,6 @@ Requirements
 ## Platform:
 
 * Centos 6.6
-* RHEL 6.6
 
 Notes
 =====
@@ -61,6 +60,4 @@ limitations under the License.
     
 ToDo
 ====
-
-Package install for Ubuntu.
 
