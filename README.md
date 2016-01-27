@@ -44,7 +44,7 @@ License and Authors
 * Authors:: Dan Barrell (<chef@eaglegenomics.com>)
 * Authors:: Nick James (<chef@eaglegenomics.com>)
 
-Copyright:: 2015, Eagle Genomics Ltd
+Copyright:: 2016, Eagle Genomics Ltd, Apache License, Version 2.0
     
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
