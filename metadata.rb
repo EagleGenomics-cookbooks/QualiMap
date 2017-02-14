@@ -9,3 +9,6 @@ version '1.0.5'
 depends 'build-essential'
 depends 'magic_shell'
 depends 'java'
+
+source_url 'https://github.com/EagleGenomics-cookbooks/QualiMap'
+issues_url 'https://github.com/EagleGenomics-cookbooks/QualiMap/issues'
