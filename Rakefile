@@ -1,8 +1,11 @@
+require 'cookstyle'
 require 'rubocop/rake_task'
 require 'foodcritic'
 require 'rspec/core/rake_task'
 
-RuboCop::RakeTask.new(:rubocop)
+RuboCop::RakeTask.new do |task|
+  task.options << '--display-cop-names'
+end
 FoodCritic::Rake::LintTask.new(:foodcritic)
 RSpec::Core::RakeTask.new(:rspec)
 
@@ -12,7 +15,6 @@ begin
 
   desc 'Alias for kitchen:all'
   task all: 'kitchen:all'
-
 rescue LoadError
   puts '>>>>> Kitchen gem not loaded, omitting tasks' unless ENV['CI']
 end
