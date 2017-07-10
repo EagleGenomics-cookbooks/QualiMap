@@ -1,5 +1,5 @@
 default['java']['install_flavor'] = 'oracle'
-default['java']['jdk_version'] = 6
+default['java']['jdk_version'] = 8
 default['java']['oracle']['accept_oracle_download_terms'] = true
 default['QualiMap']['version'] = 'v2.2.1'
 default['QualiMap']['filename'] = 'qualimap_' + default['QualiMap']['version'] + '.zip'
