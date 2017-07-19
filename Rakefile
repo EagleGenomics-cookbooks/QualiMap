@@ -20,10 +20,10 @@ rescue LoadError
 end
 
 desc 'Run all pre-convergence test: rubocop, foodcritic, rspec'
-task tests: [:rubocop, :foodcritic, :rspec]
+task tests: %i(rubocop foodcritic rspec)
 
 desc 'Run kitchen: includes destroy, converge, verify - default: all'
 task kitchen: [:all]
 
 desc 'Run both tests, kitchen converge and verify'
-task default: [:tests, :kitchen]
+task default: %i(tests kitchen)
